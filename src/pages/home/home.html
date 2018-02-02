@@ -1,14 +1,58 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
+  <ion-navbar color="primary"  text-center>
+    <ion-title >
+      {{page.productTitle}}
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-grid no-padding>
+    <ion-row class="title" justify-content-center>
+      <ion-col text-left align-self-start>
+        <ion-icon name="arrow-back" (click)="goBack()"></ion-icon>
+      </ion-col>
+      <ion-col text-center col-8 align-self-start>
+        <div>
+          Pay for
+          <strong>{{page.productTitle}}</strong>
+        </div>
+        <div>
+          <small>{{page.category}}</small>
+        </div>
+      </ion-col>
+      <ion-col class="image-icon " text-right align-self-start>
+        <img [src]="page.logo" alt="">
+      </ion-col>
+    </ion-row>
+    <ion-row class="blockMargin">
+      <ion-col>
+        <ion-list no-margin>
+          <ion-label color="lblack" no-margin margin-top>Price Per {{page.entity}}</ion-label>
+          <ion-label color="lgreen" no-margin class="font_bigger"> {{page.price | currency : '$' : 2}}</ion-label>
+        </ion-list>
+
+      </ion-col>
+    </ion-row>
+    
+     <ion-row *ngFor="let field of page.fields">
+      <ion-col>
+        <ion-list no-margin>
+          
+          <ion-item no-padding no-border *ngIf="field.type === 'text' || field.type === 'number' || field.type === 'email' || field.type === 'tel'">
+            <ion-label color="lblack" floating>{{field.label}}</ion-label>
+            <ion-input [id]="field.fieldId" [type]="field.type" (ngModel)="field.modelName"></ion-input>
+          </ion-item>
+
+          <ion-item no-padding *ngIf="field.type === 'dropdown'">
+            <ion-label color="lblack" floating>{{field.label}}</ion-label>
+            <ion-select [id]="field.fieldId" interface="action-sheet" [(ngModel)]="field.modelName">
+              <ion-option *ngFor="let select of field.values" [value]="select.code" [selected]="select.selected">{{select.value}}</ion-option>
+              </ion-select>
+          </ion-item>          
+        </ion-list>
+      </ion-col>
+    </ion-row> 
+  </ion-grid>
+
 </ion-content>

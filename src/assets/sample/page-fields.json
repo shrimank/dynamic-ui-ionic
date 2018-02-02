@@ -1,0 +1,112 @@
+{
+    "productName":"Fall Cheerleading",
+    "productTitle":"Fall Cheerleading",
+    "productCode":"FCL",
+    "logo":"assets/img/avatar.png",
+    "entity":"Student",
+    "category":"Municipality of Plymouth",
+    "price":"36",
+    "fields":[
+                {
+                    "type":"text",
+                    "fieldId":"parentNameId",
+                    "label":"Parent/Guardian'sName",
+                    "description":"",
+                    "segment":"FIRST",
+                    "minLength":"5",
+                    "maxLength":"30",
+                    "displayOrder":"0",
+                    "modelName":"VAR_ATTRIBUTE_1"
+                },
+                {
+                    "type":"number",
+                    "fieldId":"parentPhoneNumId",
+                    "label":"Parent/Phone Number",
+                    "description":"",
+                    "segment":"FIRST",
+                    "minLength":"10",
+                    "maxLength":"15",
+                    "displayOrder":"1",
+                    "modelName":"VAR_ATTRIBUTE_2"
+                },
+                {
+                    "type":"email",
+                    "fieldId":"parentEmailId",
+                    "label":"Email ID",
+                    "description":"",
+                    "segment":"FIRST",
+                    "minLength":"6",
+                    "maxLength":"50",
+                    "displayOrder":"2",
+                    "modelName":"VAR_ATTRIBUTE_3"
+                },{
+                    "type":"dropdown",
+                    "fieldId":"schooleNameId",
+                    "label":"School Name",
+                    "description":"School Name",
+                    "segment":"SECOND",
+                    "minLength":"0",
+                    "maxLength":"0",
+                    "displayOrder":"3",
+                    "modelName":"VAR_ATTRIBUTE_4",
+                    "values":[{"code":"Plymouth South High School","value":"Plymouth South High School","selected":"true"},
+                              {"code":"United International","value":"United International","selected":"false"},
+                              {"code":"St. Joseph International","value":"St. Joseph International","selected":"false"}]
+                },
+                {
+                    "type":"dropdown",
+                    "fieldId":"gradeId",
+                    "label":"Grade",
+                    "description":"Student Grade",
+                    "segment":"SECOND",
+                    "minLength":"0",
+                    "maxLength":"0",
+                    "displayOrder":"0",
+                    "modelName":"VAR_ATTRIBUTE_5",
+                    "values":[{"code":"1","value":"1st","selected":"true"},
+                        {"code":"2","value":"2nd","selected":"false"},
+                        {"code":"3","value":"3rd","selected":"false"},
+                        {"code":"4","value":"4th","selected":"false"},
+                        {"code":"5","value":"5th","selected":"false"},
+                        {"code":"6","value":"6th","selected":"false"},
+                        {"code":"7","value":"7th","selected":"false"},
+                        {"code":"8","value":"8th","selected":"false"}
+
+                            ]
+                },
+                {
+                    "type":"text",
+                    "fieldId":"stdId",
+                    "label":"Student ID",
+                    "description":"student id",
+                    "segment":"SECOND",
+                    "minLength":"1",
+                    "maxLength":"10",
+                    "displayOrder":"1",
+                    "modelName":"VAR_ATTRIBUTE_6"
+                },
+                {
+                    "type":"text",
+                    "fieldId":"stdFirstNameId",
+                    "label":"Student's First Name",
+                    "description":"First name",
+                    "segment":"SECOND",
+                    "minLength":"1",
+                    "maxLength":"30",
+                    "displayOrder":"2",
+                    "modelName":"VAR_ATTRIBUTE_7"
+                },
+                {
+                    "type":"text",
+                    "fieldId":"stdLastNameId",
+                    "label":"Student's Last Name",
+                    "description":"Last name",
+                    "segment":"SECOND",
+                    "minLength":"1",
+                    "maxLength":"30",
+                    "displayOrder":"3",
+                    "modelName":"VAR_ATTRIBUTE_8"
+                }
+            ]
+    
+    }

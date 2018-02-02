@@ -1,3 +1,138 @@
 page-home {
 
+    // .tab-Segments {
+    //     border-bottom: 4px solid map-get($colors, polishblue);
+    // }
+    // .tab-Segments .segment-ios .segment-button {
+    //     -webkit-box-flex: 0.2;
+    //     -webkit-flex: 0.2;
+    //     -ms-flex: 0.2;
+    //     flex: 0.2;
+    // }
+    // .tab-Segments ion-segment .segment-activated {
+    //     background: map-get($colors, polishblue);
+    // }
+    
+   
+    ion-row.title {
+        border-bottom: 1px solid gray;
+    }
+    .title ion-icon {
+        font-size: 24px;
+    }
+    ion-col.image-icon {
+        padding: 0 5px 5px 5px;
+    }
+    ion-input[type="text"] {
+        // border: 1px solid grey;
+        border-bottom: 1px solid map-get($colors ,lblack );
+        height: 32px;    font-size: 1.5rem;
+    }
+    ion-select {
+        // border: 1px solid grey;
+        border-bottom: 1px solid map-get($colors ,lblack );
+        height: 32px;    font-size: 1.5rem;
+    }
+    ion-label[color] ion-input {
+        height: 33px;
+        border: 1px solid;
+        border-radius: 3px;
+    }
+    .blockMargin{
+        margin-bottom: 0px;
+    }
+    .studentBlock{
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+    .student-count {
+        background-color: rgb(214, 214, 214);
+        border-radius: 5px;
+    }
+    .student-count ion-input[type="text"] {
+        background-color: rgb(105, 101, 101);
+        padding: 0;
+        margin: 3px 0;
+        border: none;
+    }
+    .list-ios > .item-block:last-child,
+    .list-ios > .item-block:first-child{
+        border: none;
+    }
+    .student-count button,
+    ion-icon {
+        margin: 0;
+        padding: 0;
+        color: rgb(56, 54, 54);
+    }
+    .student-count * {
+        background-color: transparent;
+    }
+   
+    // ion-label,
+    // ion-label.label-ios {
+    //     font-size: 10px;
+    //     margin-bottom: 3px;
+    // }
+    ion-label[no-margin] {
+        font-size: 1.2rem;
+    }
+    .tabbar {
+        display: none;
+    }
+    ion-label {
+        font-size: 1.2rem !important;
+        padding-bottom: 6px;
+    }
+    .add_Product ion-list, .add_Product ion-item {
+        border: none;
+    }
+    .add_Product button{
+        font-size: 13px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .add_Product ion-list.list-ios ion-item.item-block{
+        border: none !important;
+    }
+  .btnRows{
+      margin-bottom: 6%;
+  }
+  button[outline]{
+      height: 30px; font-size: 2rem !important;
+  }
+  ion-label.font_bigger{
+      font-size: 2rem !important;
+  }
+//   .batchNumber, .batchNumber.button-ios {
+//     font-size: 28px !important;
+//     margin: 0;
+//     padding: 0;
+//     height: 30px;
+//     border-radius: 3px;
+// }
+// button.batchNumber span.button-inner, button.batchNumber.button-ios span.button-inner,
+// button.batchNumber.button-md span.button-inner,
+// button.batchNumber.button-wp span.button-inner{
+//     font-size: 2rem; margin: 1px;
+// }
+button span.button-inner, button.button-ios span.button-inner,
+button.button-md span.button-inner,
+button.button-wp span.button-inner {
+    font-size: 1.2rem !important;
+    text-transform:capitalize;
+    margin: 0px !important;
+}
+  .text-input-wp{
+      border: none;
+  }
+  .select-wp{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.list-md .item-input:last-child{ border: none;}
+button span.button-inner .alert-radio-label{
+    font-size: 1.5rem;
+}
 }
